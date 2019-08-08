@@ -65,8 +65,27 @@ ___
 ###*工具連結
 - [google drive](https://drive.google.com/drive/folders/1wM00duSoITQz7gtglihT8cQQpkF2WGoj?usp=sharing)
 
-合約收費
 
-簽約30%
-完成驗收40%
-第一年保固完成30%
+##執行階段
+<table>
+    <tr>
+        <td>日期</td>
+        <td>內容</td>
+        <td>備註</td>
+    </tr>
+    <tr>
+        <td>尚未完成</td>
+        <td>首次簽約</td>
+        <td>支付30%訂金</td>
+    </tr>
+    <tr>
+        <td>尚未完成</td>
+        <td>完成驗收</td>
+        <td>支付40%金額</td>
+    </tr>
+    <tr>
+        <td>尚未完成</td>
+        <td>第一年保固結束、完成</td>
+        <td>支付30%尾款</td>
+    </tr>
+</table>
