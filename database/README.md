@@ -70,6 +70,7 @@
 ### 格式
 
 -   鍵值填寫: 主建為 `pkey_{name}`, 普通索引為 `idx_{name}`, 唯一索引 `unique_{name}`，只有一個欄位的時候 `{name}` 可不填。
+-   外鍵: 外鍵直接在表格下方說明，如: FK1: `(欄位)` reference `table(column)`。
 -   欄位設置說明: <br>`data type(data length)`<br>`[default value]`<br>`[index name]`，若無值則填null。
 -   空值: 若可空值，則書寫至中文名稱後方，如 `名稱(空)`。
 -   標題說明: head需以 `h4` 作為 資料表名稱敘述，因為`toc(Table of content)`自動產生的關係，底線需換成中線，範例為`prefix-table|資料表`。

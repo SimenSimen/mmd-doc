@@ -55,6 +55,7 @@
 ### \*工具連結
 
 - [google drive](https://drive.google.com/drive/folders/1wM00duSoITQz7gtglihT8cQQpkF2WGoj?usp=sharing)
+- [git repository](https://git.ndmcoreji.com/simen/laravel-project-kit)
 
 ## 執行階段
 
