@@ -1,10 +1,18 @@
-## 說明
+## 說明<!-- omit in toc -->
 
 工具相關表格
 
-## 資料表
+## 資料表快速連結<!-- omit in toc -->
 
-#### 橫幅資料表(u_banner)
+- [u-banner|橫幅資料表](#u-banner橫幅資料表)
+- [u-upload|上傳檔案資料表](#u-upload上傳檔案資料表)
+- [資料表](#資料表)
+
+#### u-banner|橫幅資料表
+
+資料表名稱: `u_banner`
+
+中文名稱: 橫幅資料表
 
 若需要區分多個使用者，則可以建立**關聯表**來規劃橫幅的使用權。
 
@@ -20,8 +28,11 @@
 | `created_at` |   建立時間   |  `datetime(0)`<br>`[null]`<br>`[idx]`   | &nbsp;                   | &nbsp;   |
 | `updated_at` |   更新時間   |  `datetime(0)`<br>`[null]`<br>`[idx]`   | &nbsp;                   | &nbsp;   |
 
+#### u-upload|上傳檔案資料表
 
-#### 上傳檔案資料表(u_upload)
+名稱: `u_upload`
+
+中文名稱: 上傳檔案資料表
 
 |     欄位     |   名稱   |                  設置                  | 說明                                    | 備註     |
 | :----------: | :------: | :------------------------------------: | --------------------------------------- | -------- |
@@ -33,3 +44,5 @@
 |    `type`    |   類型   |   `tinyint(1)`<br>`[9]`<br>`[null]`    | `1`: 圖片 <br>`2`: office<br> `9`: 其他 | &nbsp;   |
 | `created_by` | 建立人員 | `varchart(128)`<br>`[null]`<br>`[idx]` | &nbsp;                                  | &nbsp;   |
 | `created_at` | 建立時間 |  `datetime(0)`<br>`[null]`<br>`[idx]`  | &nbsp;                                  | &nbsp;   |
+
+#### 資料表

@@ -64,10 +64,15 @@
 
 ## 文件說明
 
-### 格式說明
+### vscode markdown plugin
+-   markdown one in all
+
+### 格式
 
 -   鍵值填寫: 主建為 `pkey_{name}`, 普通索引為 `idx_{name}`, 唯一索引 `unique_{name}`，只有一個欄位的時候 `{name}` 可不填。
 -   欄位設置說明: <br>`data type(data length)`<br>`[default value]`<br>`[index name]`，若無值則填null。
--   空值: 若可空值，則書寫至中文名稱後方，如 `名稱(空)`
--   說明盡量書寫完整
+-   空值: 若可空值，則書寫至中文名稱後方，如 `名稱(空)`。
+-   標題說明: head需以 `h4` 作為 資料表名稱敘述，因為`toc(Table of content)`自動產生的關係，底線需換成中線，範例為`prefix-table|資料表`。
+-   需在表格上方填寫資料表名稱、資料表中文名稱。
+-   說明盡量書寫完整。
 
