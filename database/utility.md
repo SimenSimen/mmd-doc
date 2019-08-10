@@ -4,13 +4,13 @@
 
 ## 資料表快速連結<!-- omit in toc -->
 
-- [u-banner|橫幅資料表](#u-banner橫幅資料表)
-- [u-upload|上傳檔案資料表](#u-upload上傳檔案資料表)
-- [u-menu|選單資料表](#u-menu選單資料表)
-- [u-user-auth|會員認證資料表](#u-user-auth會員認證資料表)
-- [u-user-config|使用者設定資料表](#u-user-config使用者設定資料表)
-- [u-notification|系統通知資料表](#u-notification系統通知資料表)
-- [r-notification-state|已讀狀態資料表](#r-notification-state已讀狀態資料表)
+- [u-banner|橫幅資料表](#u-banner%e6%a9%ab%e5%b9%85%e8%b3%87%e6%96%99%e8%a1%a8)
+- [u-upload|上傳檔案資料表](#u-upload%e4%b8%8a%e5%82%b3%e6%aa%94%e6%a1%88%e8%b3%87%e6%96%99%e8%a1%a8)
+- [u-menu|選單資料表](#u-menu%e9%81%b8%e5%96%ae%e8%b3%87%e6%96%99%e8%a1%a8)
+- [u-user-auth|會員認證資料表](#u-user-auth%e6%9c%83%e5%93%a1%e8%aa%8d%e8%ad%89%e8%b3%87%e6%96%99%e8%a1%a8)
+- [u-user-config|使用者設定資料表](#u-user-config%e4%bd%bf%e7%94%a8%e8%80%85%e8%a8%ad%e5%ae%9a%e8%b3%87%e6%96%99%e8%a1%a8)
+- [u-notification|系統通知資料表](#u-notification%e7%b3%bb%e7%b5%b1%e9%80%9a%e7%9f%a5%e8%b3%87%e6%96%99%e8%a1%a8)
+- [r-notification-state|已讀狀態資料表](#r-notification-state%e5%b7%b2%e8%ae%80%e7%8b%80%e6%85%8b%e8%b3%87%e6%96%99%e8%a1%a8)
 
 #### u-banner|橫幅資料表
 
@@ -105,19 +105,20 @@
 
 中文名稱: 系統通知資料表
 
-|     欄位     |        名稱        |                   設置                   | 說明                                                | 備註     |
-| :----------: | :----------------: | :--------------------------------------: | --------------------------------------------------- | -------- |
-|     `id`     |        編號        |    `int(20)`<br>`[null]`<br>`[pkey]`     | &nbsp;                                              | 自動編號 |
-|   `level`    |        程度        |    `tinyint(2)`<br>`[1]`<br>`[null]`     | &nbsp;                                              | &nbsp;   |
-|   `title`    |        標題        |  `varchar(255)`<br>`[null]`<br>`[idx]`   | &nbsp;                                              | &nbsp;   |
-|  `content`   |        內容        |    `text(0)`<br>`[null]`<br>`[null]`     | &nbsp;                                              | &nbsp;   |
-|    `link`    |      連結(空)      |  `varchar(255)`<br>`[null]`<br>`[null]`  | &nbsp;                                              | &nbsp;   |
-| `condition`  | 通知條件＼對象(空) |  `varchar(64)`<br>`[null]`<br>`[null]`   | 字串，過濾條件程式內定義。<br>空值為全體(user_type) | &nbsp;   |
-| `user_type`  |     使用者類型     | `tinyint(1)`<br>`[null]`<br>`[idx_user]` | 自定義使用者                                        | &nbsp;   |
-| `updated_at` |    更新時間(空)    |   `datetime(0)`<br>`[null]`<br>`[idx]`   | &nbsp;                                              | &nbsp;   |
-| `created_at` |      建立時間      |   `datetime(0)`<br>`[null]`<br>`[idx]`   | &nbsp;                                              | &nbsp;   |
-| `created_by` |      建立人員      |  `varchar(255)`<br>`[null]`<br>`[idx]`   | &nbsp;                                              | &nbsp;   |
-| `updated_by` |    更新人員(空)    |  `varchar(255)`<br>`[null]`<br>`[idx]`   | &nbsp;                                              | &nbsp;   |
+|     欄位     |        名稱        |                  設置                  | 說明                                                | 備註     |
+| :----------: | :----------------: | :------------------------------------: | --------------------------------------------------- | -------- |
+|     `id`     |        編號        |   `int(20)`<br>`[null]`<br>`[pkey]`    | &nbsp;                                              | 自動編號 |
+|   `level`    |        程度        |   `tinyint(2)`<br>`[1]`<br>`[null]`    | &nbsp;                                              | &nbsp;   |
+| `group_name` |        群組        |  `varchar(64)`<br>`[null]`<br>`[idx]`  | &nbsp;                                              | &nbsp;   |
+|   `title`    |        標題        | `varchar(255)`<br>`[null]`<br>`[idx]`  | &nbsp;                                              | &nbsp;   |
+|  `content`   |        內容        |   `text(0)`<br>`[null]`<br>`[null]`    | &nbsp;                                              | &nbsp;   |
+|    `link`    |      連結(空)      | `varchar(255)`<br>`[null]`<br>`[null]` | &nbsp;                                              | &nbsp;   |
+| `condition`  | 通知條件＼對象(空) | `varchar(64)`<br>`[null]`<br>`[null]`  | 字串，過濾條件程式內定義。<br>空值為全體(user_type) | &nbsp;   |
+| `user_type`  |     使用者類型     |  `tinyint(1)`<br>`[null]`<br>`[null]`  | 自定義使用者                                        | &nbsp;   |
+| `updated_at` |    更新時間(空)    |  `datetime(0)`<br>`[null]`<br>`[idx]`  | &nbsp;                                              | &nbsp;   |
+| `created_at` |      建立時間      |  `datetime(0)`<br>`[null]`<br>`[idx]`  | &nbsp;                                              | &nbsp;   |
+| `created_by` |      建立人員      | `varchar(255)`<br>`[null]`<br>`[idx]`  | &nbsp;                                              | &nbsp;   |
+| `updated_by` |    更新人員(空)    | `varchar(255)`<br>`[null]`<br>`[idx]`  | &nbsp;                                              | &nbsp;   |
 
 #### r-notification-state|已讀狀態資料表
 
