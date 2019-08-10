@@ -1,7 +1,5 @@
 * [概述](README.md)
 
-----
-
 * [1. 系統架構](structure/README.md)
   * [1.1 網站地圖](null)
   * [1.2 模組架構](null)
@@ -15,16 +13,9 @@
   * [2.5 商品相關](null)
   * [2.6 優惠相關](null)
 
-----
-
-* [3. API設計](null)
-
-  * [3.1 會員相關](null)
-  * [3.2 代理商相關](null)
-  * [3.3 商品相關](null)
-  * [3.4 優惠相關](null)
-
-----
+* [3. 系統平台API](API/admin/README.md)
+  * [3.1 一般組件](API/admin/commons.md)
+  * [3.2 會員相關](API/admin/user.md)
 
 * [系統版本更新](version.md)
 * [文件版本更新](doc-version.md)
