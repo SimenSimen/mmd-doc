@@ -13,6 +13,8 @@
   * [2.5 商品相關](null)
   * [2.6 優惠相關](null)
 
+* [API 說明](API/README.md)
+
 * [3. 系統平台API](API/admin/README.md)
   * [3.1 一般組件](API/admin/commons.md)
   * [3.2 會員相關](API/admin/user.md)
