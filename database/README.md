@@ -22,6 +22,7 @@
 |  `parent_{column}`  |  關聯欄位  | 需填上欄位名稱                               | &nbsp; |
 | `{table}_{column}`  |  關聯欄位  | 需填上資料表名稱以及關聯欄位，前綴字不須填入 | &nbsp; |
 |       `name`        |    名稱    | &nbsp;                                       | &nbsp; |
+|       `level`       |    程度    | &nbsp;                                       | &nbsp; |
 |       `email`       |   E-mail   | &nbsp;                                       | &nbsp; |
 |      `account`      |    帳號    | &nbsp;                                       | &nbsp; |
 |     `password`      |    密碼    | &nbsp;                                       | &nbsp; |
@@ -56,6 +57,7 @@
 | `_data` | 營運資料 | 通常為使用者輸入產生，如商品、新聞等等，並且是可被搜尋的。 | &nbsp; |
 |  `_u`   | 工具資料 | 通常為元件之資料表，如網站設定、橫幅、Menu等等             | &nbsp; |
 | `_log`  | 紀錄資料 | 通常為系統產生紀錄之資料表                                 | &nbsp; |
+|  `_r`   | 關聯資料 | 關聯用資料表                                               | &nbsp; |
 
 ### 資料內容
 
@@ -64,10 +66,16 @@
 
 ## 文件說明
 
-### 格式說明
+### vscode markdown plugin
+-   markdown one in all
+
+### 格式
 
 -   鍵值填寫: 主建為 `pkey_{name}`, 普通索引為 `idx_{name}`, 唯一索引 `unique_{name}`，只有一個欄位的時候 `{name}` 可不填。
+-   外鍵: 外鍵直接在表格下方說明，如: FK1: `(欄位)` reference `table(column)`。
 -   欄位設置說明: <br>`data type(data length)`<br>`[default value]`<br>`[index name]`，若無值則填null。
--   空值: 若可空值，則書寫至中文名稱後方，如 `名稱(空)`
--   說明盡量書寫完整
+-   空值: 若可空值，則書寫至中文名稱後方，如 `名稱(空)`。
+-   標題說明: head需以 `h4` 作為 資料表名稱敘述，因為`toc(Table of content)`自動產生的關係，底線需換成中線，範例為`prefix-table|資料表`。
+-   需在表格上方填寫資料表名稱、資料表中文名稱。
+-   說明盡量書寫完整。
 
