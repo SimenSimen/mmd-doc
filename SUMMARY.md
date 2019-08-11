@@ -8,9 +8,9 @@
 * [2. 資料庫設計](database/README.md)
   * [2.1 系統資料表](database/system.md)
   * [2.2 工具相關資料表](database/utility.md)
-  * [2.3 會員相關資料表](null)
+  * [2.3 會員相關資料表](database/member.md)
   * [2.4 代理商相關](null)
-  * [2.5 商品相關](null)
+  * [2.5 商品相關](database/good.md)
   * [2.6 優惠相關](null)
 
 * [API 說明](API/README.md)
