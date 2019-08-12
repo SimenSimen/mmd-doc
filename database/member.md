@@ -13,17 +13,22 @@
 
 中文名稱: 會員基本資料表
 
-|     欄位     |    名稱    |                 設置                  | 說明                               | 備註     |
-| :----------: | :--------: | :-----------------------------------: | ---------------------------------- | -------- |
-|     `id`     |    編號    |   `int(10)`<br>`[null]`<br>`[pkey]`   | &nbsp;                             | 自動編號 |
-|  `account`   |    帳號    | `varchar(128)`<br>`[null]`<br>`[unique]` | &nbsp;                             | &nbsp;   |
-|  `password`  |    密碼    | `varchar(128)`<br>`[null]`<br>`[null]` | 區分橫幅區塊。                     | &nbsp;   |
-|    `guid`    |   識別碼   | `varchar(64)`<br>`[null]`<br>`[null]` | &nbsp;                             | &nbsp;   |
-|    `name`    |    名稱    | `varchar(128)`<br>`[null]`<br>`[null]` | &nbsp;                             | &nbsp;   |
-|    `sex`     |    性別    | `tinyint(1)`<br>`[null]`<br>`[null]`  | `0`: 未填 <br> `1`: 男<br> `1`: 女 | &nbsp;   |
-|   `email`    |    信箱    | `varchar(128)`<br>`[null]`<br>`[null]` | &nbsp;                             | &nbsp;   |
-|   `phone`    |  電話號碼  | `varchar(128)`<br>`[null]`<br>`[null]` | &nbsp;                             | &nbsp;   |
-| `birthdate`  | 出生年月日 | `datetime(0)`<br>`[null]`<br>`[null]`  | &nbsp;                             | &nbsp;   |
-|   `active`   |  啟用狀態  | `tinyint(1)`<br>`[null]`<br>`[null]`  | `0`: 停用 <br> `1`: 啟用           | &nbsp;   |
-| `created_at` |  建立時間  | `datetime(0)`<br>`[null]`<br>`[idx]`  | &nbsp;                             | &nbsp;   |
-| `updated_at` |  更新時間  | `datetime(0)`<br>`[null]`<br>`[idx]`  | &nbsp;                             | &nbsp;   |
+
+
+|     欄位     |   名稱   |                   設置                   | 說明                               | 備註     |
+| :----------: | :------: | :--------------------------------------: | ---------------------------------- | -------- |
+|     `id`     |   編號   |    `int(10)`<br>`[null]`<br>`[pkey]`     | &nbsp;                             | 自動編號 |
+|  `account`   |   帳號   | `varchar(128)`<br>`[null]`<br>`[unique]` | &nbsp;                             | &nbsp;   |
+|  `password`  |   密碼   |  `varchar(128)`<br>`[null]`<br>`[null]`  | &nbsp;                             | &nbsp;   |
+|    `name`    |   名稱   | `varchar(128)`<br>`[null]`<br>`[index]`  | &nbsp;                             | &nbsp;   |
+|    `sex`     |   性別   |   `tinyint(1)`<br>`[null]`<br>`[null]`   | `0`: 未填 <br> `1`: 男<br> `2`: 女 | &nbsp;   |
+|   `email`    |   信箱   | `varchar(128)`<br>`[null]`<br>`[unique]` | &nbsp;                             | &nbsp;   |
+|  `phone_no`  | 行動電話 | `varchar(10)`<br>`[null]`<br>`[unique]`  | &nbsp;                             | &nbsp;   |
+|   `tel_no`   |   市話   |  `varchar(64)`<br>`[null]`<br>`[null]`   | &nbsp;                             | &nbsp;   |
+| `birthdate`  |   生日   |    `date(0)`<br>`[null]`<br>`[null]`     | 年月日                             | &nbsp;   |
+| `group_name` | 分組名稱 |  `varchar(64)`<br>`[null]`<br>`[null]`   | 特定公司批發商、特約會員等類別     | &nbsp;   |
+|   `active`   | 啟用狀態 |   `tinyint(1)`<br>`[null]`<br>`[null]`   | `0`: 停用 <br> `1`: 啟用           | &nbsp;   |
+| `created_at` | 建立時間 |   `datetime(0)`<br>`[null]`<br>`[idx]`   | &nbsp;                             | &nbsp;   |
+| `updated_at` | 更新時間 |   `datetime(0)`<br>`[null]`<br>`[idx]`   | &nbsp;                             | &nbsp;   |
+
+
