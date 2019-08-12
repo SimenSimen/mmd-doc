@@ -3,15 +3,13 @@
 
 ## 資料表快速連結<!-- omit in toc -->
 
-- [good|商品資料表](#good%E5%95%86%E5%93%81%E8%B3%87%E6%96%99%E8%A1%A8)
-- [good-spec|商品規格表](#good-spec%E5%95%86%E5%93%81%E8%A6%8F%E6%A0%BC%E8%A1%A8)
-- [good-category|商品分類表](#good-category%E5%95%86%E5%93%81%E5%88%86%E9%A1%9E%E8%A1%A8)
+- [data_good|商品資料表](#datagood%E5%95%86%E5%93%81%E8%B3%87%E6%96%99%E8%A1%A8)
+- [data_good_spec|商品規格表](#datagoodspec%E5%95%86%E5%93%81%E8%A6%8F%E6%A0%BC%E8%A1%A8)
+- [data_good_category|商品分類表](#datagoodcategory%E5%95%86%E5%93%81%E5%88%86%E9%A1%9E%E8%A1%A8)
 
-#### good|商品資料表
-#### good-spec|商品規格表
-#### good-category|商品分類表
+#### data_good|商品資料表
 
-資料表名稱: `good`
+資料表名稱: `data_good`
 
 中文名稱: 商品資料表
 
@@ -28,7 +26,9 @@
 | `created_at`  | 建立時間 | `datetime(0)`<br>`[null]`<br>`[idx]`  | &nbsp;                   | &nbsp;   |
 
 
-資料表名稱: `good-spec`
+#### data_good_spec|商品規格表
+
+資料表名稱: `data_good_spec`
 
 中文名稱: 商品資料表
 
@@ -44,7 +44,9 @@
 | `created_by` |  建立人員  | `varchar(128)`<br>`[null]`<br>`[idx]` | &nbsp;                   | &nbsp;   |
 | `created_at` |  建立時間  | `datetime(0)`<br>`[null]`<br>`[idx]`  | &nbsp;                   | &nbsp;   |
 
-資料表名稱: `good-category`
+#### data_good_category|商品分類表
+
+資料表名稱: `data_good_category`
 
 中文名稱: 商品分類
 

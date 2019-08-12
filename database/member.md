@@ -4,12 +4,12 @@
 
 ## 資料表快速連結<!-- omit in toc -->
 
-- [member|會員基本資料表](#member%e6%9c%83%e5%93%a1%e5%9f%ba%e6%9c%ac%e8%b3%87%e6%96%99%e8%a1%a8)
+- [data_member|會員基本資料表](#datamember%E6%9C%83%E5%93%A1%E5%9F%BA%E6%9C%AC%E8%B3%87%E6%96%99%E8%A1%A8)
 
 
-#### member|會員基本資料表
+#### data_member|會員基本資料表
 
-資料表名稱: `member`
+資料表名稱: `data_member`
 
 中文名稱: 會員基本資料表
 
