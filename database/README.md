@@ -21,6 +21,7 @@
 |        `id`         |    編號    | primay key 流水號                            | &nbsp; |
 |  `parent_{column}`  |  關聯欄位  | 需填上欄位名稱                               | &nbsp; |
 | `{table}_{column}`  |  關聯欄位  | 需填上資料表名稱以及關聯欄位，前綴字不須填入 | &nbsp; |
+|      `amount`       |    數量    | &nbsp;                                       | &nbsp; |
 |       `name`        |    名稱    | &nbsp;                                       | &nbsp; |
 |       `level`       |    程度    | &nbsp;                                       | &nbsp; |
 |       `email`       |   E-mail   | &nbsp;                                       | &nbsp; |
@@ -29,22 +30,27 @@
 |       `type`        |    類別    | &nbsp;                                       | &nbsp; |
 |    `{name}_type`    | (名稱)類別 | &nbsp;                                       | &nbsp; |
 |     `phone_no`      |  行動電話  | &nbsp;                                       | &nbsp; |
+|      `fax_no`       |  傳真電話  | &nbsp;                                       | &nbsp; |
 |      `tel_no`       |    市話    | &nbsp;                                       | &nbsp; |
+|      `device`       |    裝置    | &nbsp;                                       | &nbsp; |
+|        `ip`         |   ip位置   | &nbsp;                                       | &nbsp; |
+|   `client_agent`    | 用戶端平台 | Google Mozila IOS 等等                       | &nbsp; |
 |    `group_name`     |  分組名稱  | 分組、區塊使用                               | &nbsp; |
 |    `description`    |    描述    | &nbsp;                                       | &nbsp; |
 |      `content`      |    內容    | &nbsp;                                       | &nbsp; |
 |       `title`       |    標題    | &nbsp;                                       | &nbsp; |
-| `iamge_link_{name}` |  圖片連結  | &nbsp;                                       | &nbsp; |
+|   `{name}_limit`    |    限制    | &nbsp;                                       | &nbsp; |
+| `image_link_{name}` |  圖片連結  | &nbsp;                                       | &nbsp; |
 |      `remark`       |    備註    | &nbsp;                                       | &nbsp; |
 |     `sub_title`     |   副標題   | &nbsp;                                       | &nbsp; |
 |      `status`       |    狀態    | &nbsp;                                       | &nbsp; |
-|   `is\_{status}`    |    開關    | 需填上狀態，如 `is_opening`                  | &nbsp; |
+|    `is_{status}`    |    開關    | 需填上狀態，如 `is_opening`                  | &nbsp; |
 |      `sort_no`      |  排列序號  | &nbsp;                                       | &nbsp; |
 |    `created_at`     |  建立時間  | &nbsp;                                       | &nbsp; |
 |    `updated_at`     |  更新時間  | &nbsp;                                       | &nbsp; |
 |    `created_by`     |  建立人員  | &nbsp;                                       | &nbsp; |
 |    `updated_by`     |  更新人員  | &nbsp;                                       | &nbsp; |
-|  `{operation}\_at`  |  時間紀錄  | 需填上執行動作，如 `delete_at`               | &nbsp; |
+|  `{operation}_at`   |  時間紀錄  | 需填上執行動作，如 `delete_at`               | &nbsp; |
 
 -   若有用途同上統一欄位名稱的欄位需求，則以前綴字分別`{name}_{column}`，如: 第二組密碼，`second_password`。
 
