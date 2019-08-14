@@ -15,6 +15,7 @@
   * [2.7 商品](database/good.md)
   * [2.8 優惠](database/activity.md)
   * [2.9 使用者訊息](database/messages.md)
+  * [2.9 帳務結算](database/finance.md)
 
 * [API 說明](API/README.md)
 
